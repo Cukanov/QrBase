@@ -1,0 +1,25 @@
+{% block header %}
+  <h1>{% block title %}Создание новой записи{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="MedOrganizationName">Название медицинской организации</label>
+    <input type="text" name="MedOrganizationName" id="MedOrganizationName" required>
+    <label for="Sex">Пол</label>
+    <input name="Sex" id="Sex" required>
+    <label for="BirthYear">Год рождения</label>
+    <input type="text" name="BirthYear" id="BirthYear" required>
+    <label for="Position">Местность</label>
+    <input name="Position" id="Position" required>
+    <label for="Diagnosis">Диагноз</label>
+    <input type="text" name="Diagnosis" id="Diagnosis" required>
+    <label for="MkbCode">Код по мкб</label>
+    <input name="MkbCode" id="MkbCode" required>
+    <label for="TakeDate">Дата взятия материала</label>
+    <input type="text" name="TakeDate" id="TakeDate" required>
+    <label for="Mark">Маркировка</label>
+    <input type="text" name="Mark" id="Mark" required>
+    <input type="submit" value="Создать">
+  </form>
+{% endblock %}
